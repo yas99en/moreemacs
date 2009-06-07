@@ -2,6 +2,8 @@ package jp.sourceforge.moreemacs.handlers;
 
 import java.util.regex.Pattern;
 
+import jp.sourceforge.moreemacs.MoreEmacs;
+
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.Command;
 import org.eclipse.core.commands.ExecutionEvent;
@@ -49,14 +51,17 @@ public final class CommandHandler extends AbstractHandler {
     }
     
     // naming strategy will be separated to another class.
-    private static final String COMMAND_PREFIX_QUOTED = Pattern.quote("jp.sourceforge.moreemacs.");
-    private static final String HANDLER_PREFIX = "jp.sourceforge.moreemacs.handlers."; 
+    private static final String COMMAND_PREFIX_QUOTED = Pattern.quote(
+            MoreEmacs.class.getPackage().getName());
+    private static final String HANDLER_PREFIX = CommandHandler.class.getPackage().getName();
     private static final String HANDLER_SUFFIX = "Execution";
     private static String getExecutionClassName(ExecutionEvent event) {
         Command command = event.getCommand();
         String className = command.getId()
         .replaceFirst(COMMAND_PREFIX_QUOTED, HANDLER_PREFIX)
         +HANDLER_SUFFIX;
+        
+        
         return className;
     }
 
