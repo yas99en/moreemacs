@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
+   <description url="http://moreemacs.sourceforge.jp/update">
+      provides more emacs plugin.
+   </description>
    <feature url="features/jp.sourceforge.moreemacs.feature_1.0.0.jar" id="jp.sourceforge.moreemacs.feature" version="1.0.0"/>
 </site>
