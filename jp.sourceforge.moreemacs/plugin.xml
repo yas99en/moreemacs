@@ -20,12 +20,12 @@
       <command
             categoryId="jp.sourceforge.moreemacs.category"
             id="jp.sourceforge.moreemacs.ForwardWord"
-            name="forword-word">
+            name="forward-word">
       </command>
       <command
             categoryId="jp.sourceforge.moreemacs.category"
             id="jp.sourceforge.moreemacs.BackwardWord"
-            name="backword-word">
+            name="backward-word">
       </command>
       <command
             categoryId="jp.sourceforge.moreemacs.category"
