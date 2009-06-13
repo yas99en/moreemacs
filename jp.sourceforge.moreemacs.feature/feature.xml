@@ -2,7 +2,7 @@
 <feature
       id="jp.sourceforge.moreemacs.feature"
       label="Feature フィーチャー"
-      version="1.0.0"
+      version="1.0.0.qualifier"
       provider-name="quiver2k"
       plugin="jp.sourceforge.moreemacs">
 
