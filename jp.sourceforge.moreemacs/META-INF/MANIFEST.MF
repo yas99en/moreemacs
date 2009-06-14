@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: MoreEmacs plugin
 Bundle-SymbolicName: jp.sourceforge.moreemacs;singleton:=true
-Bundle-Version: 1.0.0.qualifier
+Bundle-Version: 1.1.0.qualifier
 Bundle-Activator: jp.sourceforge.moreemacs.MoreEmacs
 Bundle-Vendor: quiver2k
 Require-Bundle: org.eclipse.ui,
