@@ -1,13 +1,14 @@
 @CHARSET "UTF-8";
 
 body {
- background: #EEFFEE
+ background: #EEFFEE;
+ margin: 30px;
 }
 
 h1 {
- background: #8888FF
+ background: #8888FF;
 }
 
 h2 {
- background: #AAAAFF
+ background: #AAAAFF;
 }
