@@ -2,14 +2,16 @@ package jp.sourceforge.moreemacs.handlers;
 
 import java.util.List;
 
-abstract class RectangleExecution extends TextEditorExecution {
+final class RectangleStorage {
     private static List<String> rectangle ;
     
-    protected static void setRectangle(List<String> rect) {
+    private RectangleStorage() {}
+    
+    static void setRectangle(List<String> rect) {
         rectangle = rect;
     }
     
-    protected static List<String> getRectangle() {
+    static List<String> getRectangle() {
         return rectangle;
     }
 }

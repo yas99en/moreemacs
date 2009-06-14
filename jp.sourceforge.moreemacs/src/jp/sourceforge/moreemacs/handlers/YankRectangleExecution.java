@@ -13,14 +13,14 @@ import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.TextUtilities;
 
-public final class YankRectangleExecution extends RectangleExecution {
+public final class YankRectangleExecution extends TextEditorExecution {
     @Override
     public void execute() throws BadLocationException {
         if(!textEditor.isEditable()) {
             return;
         }
         
-        List<String> rectangle = getRectangle();
+        List<String> rectangle = RectangleStorage.getRectangle();
         if(rectangle == null) {
             return;
         }

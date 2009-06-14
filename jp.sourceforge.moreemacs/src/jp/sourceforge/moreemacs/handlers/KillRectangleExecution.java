@@ -14,7 +14,7 @@ import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.ITextSelection;
 
-public final class KillRectangleExecution extends RectangleExecution {
+public final class KillRectangleExecution extends TextEditorExecution {
 
     @Override
     public void execute() throws BadLocationException {
@@ -43,7 +43,7 @@ public final class KillRectangleExecution extends RectangleExecution {
         transaction.begin(DocumentRewriteSessionType.UNRESTRICTED_SMALL);
         try {
             List<String> rectangle = killRectangle(doc, startRow, startColumn, endRow, endColumn);
-            setRectangle(rectangle);
+            RectangleStorage.setRectangle(rectangle);
         } finally {
             transaction.end();
         }
