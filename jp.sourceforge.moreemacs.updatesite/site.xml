@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="http://moreemacs.sourceforge.jp/update">
-      provides more emacs plugin.
+   <description url="http://moreemacs.sourceforge.jp/update-site">
+      More Emacs update site
    </description>
-   <feature url="features/jp.sourceforge.moreemacs.feature_1.0.0.200906141454.jar" id="jp.sourceforge.moreemacs.feature" version="1.0.0.200906141454">
-      <category name="More Emacs"/>
+   <feature url="features/jp.sourceforge.moreemacs.feature_1.0.0.200906141609.jar" id="jp.sourceforge.moreemacs.feature" version="1.0.0.200906141609">
+      <category name="moreemacs"/>
    </feature>
-   <category-def name="More Emacs" label="More Emacs"/>
+   <category-def name="moreemacs" label="More Emacs">
+      <description>
+         provides more emacs like key bindings.
+      </description>
+   </category-def>
 </site>
