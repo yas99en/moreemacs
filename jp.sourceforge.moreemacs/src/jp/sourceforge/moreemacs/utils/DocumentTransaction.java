@@ -19,6 +19,10 @@ public final class DocumentTransaction {
         return sessionManager != null;
     }
     
+    public void begin() {
+    	begin(DocumentRewriteSessionType.UNRESTRICTED_SMALL);
+    }
+    
     public void begin(DocumentRewriteSessionType type) {
         if(!isAvailable()) {
             return;

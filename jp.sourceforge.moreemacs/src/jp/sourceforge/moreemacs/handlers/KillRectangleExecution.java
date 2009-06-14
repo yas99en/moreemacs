@@ -9,7 +9,6 @@ import jp.sourceforge.moreemacs.utils.DocumentCharSequence;
 import jp.sourceforge.moreemacs.utils.DocumentTransaction;
 
 import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.DocumentRewriteSessionType;
 import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.ITextSelection;
@@ -40,7 +39,7 @@ public final class KillRectangleExecution extends TextEditorExecution {
         }
 
         DocumentTransaction transaction = new DocumentTransaction(doc); 
-        transaction.begin(DocumentRewriteSessionType.UNRESTRICTED_SMALL);
+        transaction.begin();
         try {
             List<String> rectangle = killRectangle(doc, startRow, startColumn, endRow, endColumn);
             RectangleStorage.setRectangle(rectangle);

@@ -8,7 +8,6 @@ import jp.sourceforge.moreemacs.utils.DocumentCharSequence;
 import jp.sourceforge.moreemacs.utils.DocumentTransaction;
 
 import org.eclipse.jface.text.BadLocationException;
-import org.eclipse.jface.text.DocumentRewriteSessionType;
 import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.jface.text.TextUtilities;
@@ -32,7 +31,7 @@ public final class YankRectangleExecution extends TextEditorExecution {
         ensureLines(doc, row + rectangle.size());
         
         DocumentTransaction transaction = new DocumentTransaction(doc); 
-        transaction.begin(DocumentRewriteSessionType.UNRESTRICTED_SMALL);
+        transaction.begin();
         try {
             yankRectangle(doc, row, column, rectangle);
         } finally {
