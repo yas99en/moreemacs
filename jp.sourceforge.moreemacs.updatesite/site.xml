@@ -3,5 +3,8 @@
    <description url="http://moreemacs.sourceforge.jp/update">
       provides more emacs plugin.
    </description>
-   <feature url="features/jp.sourceforge.moreemacs.feature_1.0.0.jar" id="jp.sourceforge.moreemacs.feature" version="1.0.0"/>
+   <feature url="features/jp.sourceforge.moreemacs.feature_1.0.0.200906140312.jar" id="jp.sourceforge.moreemacs.feature" version="1.0.0.200906140312">
+      <category name="More Emacs"/>
+   </feature>
+   <category-def name="More Emacs" label=""/>
 </site>
