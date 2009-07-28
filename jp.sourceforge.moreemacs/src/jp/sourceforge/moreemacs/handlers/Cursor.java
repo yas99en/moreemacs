@@ -10,9 +10,11 @@ final class Cursor {
     private final ITextEditor textEditor;
     private final ITextViewerExtension5 textViewerEx5;
     private final StyledText styledText;
+    private final ITextViewer textViewer;
     
     Cursor(ITextEditor textEditor, ITextViewer textViewer) {
         this.textEditor = textEditor;
+        this.textViewer = textViewer;
         this.styledText = textViewer.getTextWidget();
         this.textViewerEx5 = (textViewer instanceof ITextViewerExtension5)
         ? (ITextViewerExtension5) textViewer: null;
@@ -31,12 +33,21 @@ final class Cursor {
     }
     
     void move(int offset) {
+        textViewer.setSelectedRange(offset, 0);
+        textViewer.revealRange(offset, 0);
+
+// workaround for ISourceViewer
+//        sourceViewer.setRangeIndication(offset, 0, true);
+
+// workaround for ITextViewerExtension5
 //        if(textViewerEx5 != null) {
 //            styledText.setCaretOffset(textViewerEx5.modelOffset2WidgetOffset(offset));
+//
 //            return;
 //        }
 
-        textEditor.resetHighlightRange();
-        textEditor.setHighlightRange(offset, 0, true);
+// workaround for ITextEditor
+//        textEditor.resetHighlightRange();
+//        textEditor.setHighlightRange(offset, 0, true);
     }
 }

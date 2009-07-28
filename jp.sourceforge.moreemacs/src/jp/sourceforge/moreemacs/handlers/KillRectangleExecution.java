@@ -38,30 +38,32 @@ public final class KillRectangleExecution extends TextEditorExecution {
             endColumn = work;
         }
 
+        int offset = cursor.offset();
         DocumentTransaction transaction = new DocumentTransaction(doc); 
         transaction.begin();
         try {
-            List<String> rectangle = killRectangle(doc, startRow, startColumn, endRow, endColumn);
+            List<String> rectangle = new ArrayList<String>();
+            offset = killRectangle(doc, startRow, startColumn, endRow, endColumn, rectangle);
             RectangleStorage.setRectangle(rectangle);
         } finally {
             transaction.end();
         }
+        cursor.move(offset);
     }
-    private List<String> killRectangle(IDocument doc,
+    private int killRectangle(IDocument doc,
             int startRow, int startColumn,
-            int endRow, int endColumn)
+            int endRow, int endColumn, List<String> rectangle)
             throws BadLocationException {
 
-        List<String> rectangle = new ArrayList<String>();
 
+        int result = cursor.offset();
         for(int i = startRow; i <= endRow; i++) {
-            String str = killString(doc, i, startColumn, endColumn);
-            rectangle.add(str);
+            result = killString(doc, i, startColumn, endColumn, rectangle);
         }
-        return rectangle;
+        return result;
     }
-    private String killString(IDocument doc, int row,
-            int startColumn, int endColumn) throws BadLocationException {
+    private int killString(IDocument doc, int row,
+            int startColumn, int endColumn, List<String> rectangle) throws BadLocationException {
         IRegion line = doc.getLineInformation(row);
 
         StringBuilder builder = new StringBuilder();
@@ -93,14 +95,14 @@ public final class KillRectangleExecution extends TextEditorExecution {
         }
         
         doc.replace(cutOffset, cutLength, "");
-        cursor.move(cutOffset);
 
             
         for(int i = 0; i < endColumn-column; i++) {
             builder.append(' ');
         }
         
-        return builder.toString();
+        rectangle.add(builder.toString());
+        return cutOffset;
     }
 
 }

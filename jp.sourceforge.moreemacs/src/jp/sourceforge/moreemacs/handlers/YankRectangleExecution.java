@@ -28,15 +28,17 @@ public final class YankRectangleExecution extends TextEditorExecution {
         int row = doc.getLineOfOffset(current);
         int column = ColumnUtils.getColumn(doc, current, getTabStop());
         
-        ensureLines(doc, row + rectangle.size());
-        
+
+        int offset = cursor.offset();
         DocumentTransaction transaction = new DocumentTransaction(doc); 
         transaction.begin();
         try {
-            yankRectangle(doc, row, column, rectangle);
+            ensureLines(doc, row + rectangle.size());
+            offset = yankRectangle(doc, row, column, rectangle);
         } finally {
             transaction.end();
         }
+        cursor.move(offset);
     }
     
     private void ensureLines(IDocument doc, int lines) throws BadLocationException {
@@ -54,15 +56,17 @@ public final class YankRectangleExecution extends TextEditorExecution {
         
     }
 
-    private void yankRectangle(IDocument doc,
+    private int yankRectangle(IDocument doc,
             int row, int column, List<String> rectangle)
             throws BadLocationException {
+        int offset = cursor.offset();
         for(int i = 0; i < rectangle.size(); i++) {
-            yankString(doc, row+i, column, rectangle.get(i));
+            offset = yankString(doc, row+i, column, rectangle.get(i));
         }
+        return offset;
     }
 
-    private void yankString(IDocument doc, int row, int column, String str)
+    private int yankString(IDocument doc, int row, int column, String str)
     throws BadLocationException
     {
         IRegion line = doc.getLineInformation(row);
@@ -75,8 +79,7 @@ public final class YankRectangleExecution extends TextEditorExecution {
             int codePoint = itr.next();
             if(col >= column) {
                 doc.replace(offset, 0, str);
-                cursor.move(offset+str.length());
-                return;
+                return offset+str.length();
             }
             col = ColumnUtils.getNextColumn(col, codePoint, getTabStop());
         }
@@ -88,7 +91,7 @@ public final class YankRectangleExecution extends TextEditorExecution {
         }
         builder.append(str);
         doc.replace(line.getOffset()+line.getLength(), 0, builder.toString());
-        cursor.move(line.getOffset()+line.getLength()+builder.length());
+        return line.getOffset()+line.getLength()+builder.length();
     }
 
 }
