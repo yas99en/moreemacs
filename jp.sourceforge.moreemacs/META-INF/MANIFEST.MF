@@ -7,8 +7,8 @@ Bundle-Activator: jp.sourceforge.moreemacs.MoreEmacs
 Bundle-Vendor: quiver2k
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
- org.eclipse.ui.editors;bundle-version="3.4.0",
- com.ibm.icu;bundle-version="3.8.1",
- org.eclipse.jface.text;bundle-version="3.4.2"
+ com.ibm.icu,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
