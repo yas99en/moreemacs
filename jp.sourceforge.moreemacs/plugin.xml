@@ -72,6 +72,21 @@
             id="jp.sourceforge.moreemacs.OpenLine"
             name="open-line">
       </command>
+      <command
+            categoryId="jp.sourceforge.moreemacs.category"
+            id="jp.sourceforge.moreemacs.UpcaseWord"
+            name="upcase-word">
+      </command>
+      <command
+            categoryId="jp.sourceforge.moreemacs.category"
+            id="jp.sourceforge.moreemacs.DowncaseWord"
+            name="downcase-word">
+      </command>
+      <command
+            categoryId="jp.sourceforge.moreemacs.category"
+            id="jp.sourceforge.moreemacs.CapitalizeWord"
+            name="capitalize-word">
+      </command>
    </extension>
 
    <extension
@@ -150,6 +165,24 @@
       </handler>
       <handler
             commandId="jp.sourceforge.moreemacs.OpenLine">
+         <class
+               class="jp.sourceforge.moreemacs.handlers.CommandHandler">
+         </class>
+      </handler>
+      <handler
+            commandId="jp.sourceforge.moreemacs.UpcaseWord">
+         <class
+               class="jp.sourceforge.moreemacs.handlers.CommandHandler">
+         </class>
+      </handler>
+      <handler
+            commandId="jp.sourceforge.moreemacs.DowncaseWord">
+         <class
+               class="jp.sourceforge.moreemacs.handlers.CommandHandler">
+         </class>
+      </handler>
+      <handler
+            commandId="jp.sourceforge.moreemacs.CapitalizeWord">
          <class
                class="jp.sourceforge.moreemacs.handlers.CommandHandler">
          </class>
@@ -303,6 +336,24 @@
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
             sequence="M1+X R Y">
+      </key>
+      <key
+            commandId="jp.sourceforge.moreemacs.UpcaseWord"
+            contextId="org.eclipse.ui.textEditorScope"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="M3+U">
+      </key>
+      <key
+            commandId="jp.sourceforge.moreemacs.DowncaseWord"
+            contextId="org.eclipse.ui.textEditorScope"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="M3+L">
+      </key>
+      <key
+            commandId="jp.sourceforge.moreemacs.CapitalizeWord"
+            contextId="org.eclipse.ui.textEditorScope"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="M3+C">
       </key>
    </extension>
 
