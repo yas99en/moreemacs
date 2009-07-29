@@ -11,17 +11,21 @@ public final class CommentRegionExecution extends TextEditorExecution {
         ICommandService commandService =
             (ICommandService)textEditor.getSite().getService(ICommandService.class);
         for(Command command: commandService.getDefinedCommands()) {
-            if(!command.isEnabled()) {
+            if(!isEnabledToggleCommentCommand(command)) {
                 continue;
             }
-            if(!command.getId().endsWith(".toggle.comment")) {
-                continue;
-            }
+            
+            // if the selection is empty, the marked region will be new selection.
             getSelection(true);
+            
             IHandlerService handlerService =
                 (IHandlerService)textEditor.getSite().getService(IHandlerService.class);
             handlerService.executeCommand(command.getId(), null);
-            break;
+            return;
         }
+    }
+    
+    private boolean isEnabledToggleCommentCommand(Command command) {
+        return command.isEnabled() && command.getId().endsWith(".toggle.comment");
     }
 }
