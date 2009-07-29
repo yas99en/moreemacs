@@ -2,7 +2,7 @@
 <feature
       id="jp.sourceforge.moreemacs.feature"
       label="More Emacs"
-      version="1.1.0.qualifier"
+      version="1.2.0.qualifier"
       provider-name="quiver2k"
       plugin="jp.sourceforge.moreemacs">
 
