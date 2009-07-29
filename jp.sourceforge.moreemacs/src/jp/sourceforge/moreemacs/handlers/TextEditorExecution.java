@@ -72,9 +72,7 @@ abstract class TextEditorExecution implements Execution {
         int current = selection.getOffset();
         
         int start = (mark < current) ? mark : current;
-        //textEditor.selectAndReveal(start, Math.abs(mark - current));
         textViewer.setSelectedRange(start, Math.abs(mark - current));
-
         
         return (ITextSelection) textEditor
         .getSelectionProvider().getSelection();

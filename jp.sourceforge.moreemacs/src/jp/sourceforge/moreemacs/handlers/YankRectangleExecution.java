@@ -93,7 +93,4 @@ public final class YankRectangleExecution extends TextEditorExecution {
         doc.replace(line.getOffset()+line.getLength(), 0, builder.toString());
         return line.getOffset()+line.getLength()+builder.length();
     }
-
 }
-
-
