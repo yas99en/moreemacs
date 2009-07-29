@@ -87,6 +87,11 @@
             id="jp.sourceforge.moreemacs.CapitalizeWord"
             name="capitalize-word">
       </command>
+      <command
+            categoryId="jp.sourceforge.moreemacs.category"
+            id="jp.sourceforge.moreemacs.CommentRegion"
+            name="comment-region">
+      </command>
    </extension>
 
    <extension
@@ -183,6 +188,12 @@
       </handler>
       <handler
             commandId="jp.sourceforge.moreemacs.CapitalizeWord">
+         <class
+               class="jp.sourceforge.moreemacs.handlers.CommandHandler">
+         </class>
+      </handler>
+      <handler
+            commandId="jp.sourceforge.moreemacs.CommentRegion">
          <class
                class="jp.sourceforge.moreemacs.handlers.CommandHandler">
          </class>
@@ -354,6 +365,12 @@
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
             sequence="M3+C">
+      </key>
+      <key
+            commandId="jp.sourceforge.moreemacs.CommentRegion"
+            contextId="org.eclipse.ui.textEditorScope"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="M1+C M1+C">
       </key>
    </extension>
 
