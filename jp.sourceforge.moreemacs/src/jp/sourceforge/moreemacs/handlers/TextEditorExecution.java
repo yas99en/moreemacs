@@ -74,8 +74,7 @@ abstract class TextEditorExecution implements Execution {
         int start = (mark < current) ? mark : current;
         textViewer.setSelectedRange(start, Math.abs(mark - current));
         
-        return (ITextSelection) textEditor
-        .getSelectionProvider().getSelection();
+        return (ITextSelection) textEditor.getSelectionProvider().getSelection();
     }
 
     protected final int getTabStop() {
