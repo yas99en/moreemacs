@@ -271,6 +271,11 @@
             sequence="M1+M">
       </key>
       <key
+            contextId="org.eclipse.ui.textEditorScope"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="M1+J">
+      </key>
+      <key
             commandId="jp.sourceforge.moreemacs.MoveBeginningOfLine"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
