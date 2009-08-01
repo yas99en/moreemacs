@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="http://moreemacs.sourceforge.jp/update-site">
+   <description name="More Emacs" url="http://moreemacs.sourceforge.jp/update-site">
       More Emacs update site
    </description>
    <feature url="features/jp.sourceforge.moreemacs.feature_1.2.0.200907292344.jar" id="jp.sourceforge.moreemacs.feature" version="1.2.0.200907292344">
