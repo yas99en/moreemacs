@@ -3,7 +3,7 @@
    <description name="More Emacs" url="http://moreemacs.sourceforge.jp/update-site">
       More Emacs update site
    </description>
-   <feature url="features/jp.sourceforge.moreemacs.feature_1.2.0.200907292344.jar" id="jp.sourceforge.moreemacs.feature" version="1.2.0.200907292344">
+   <feature url="features/jp.sourceforge.moreemacs.feature_1.2.0.200908020158.jar" id="jp.sourceforge.moreemacs.feature" version="1.2.0.200908020158">
       <category name="moreemacs"/>
    </feature>
    <category-def name="moreemacs" label="More Emacs">
