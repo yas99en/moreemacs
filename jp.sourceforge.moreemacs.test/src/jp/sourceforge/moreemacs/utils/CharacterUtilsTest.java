@@ -12,13 +12,18 @@ public class CharacterUtilsTest {
         for(int codePoint : CodePointIterator.each(ambiguousChars)) {
             assertEquals(2, CharacterUtils.getWidth(codePoint, Locale.JAPANESE));
         }
-        Locale.setDefault(Locale.JAPANESE);
-        for(int codePoint : CodePointIterator.each(ambiguousChars)) {
-            assertEquals(2, CharacterUtils.getWidth(codePoint));
-        }
-        Locale.setDefault(Locale.ENGLISH);
-        for(int codePoint : CodePointIterator.each(ambiguousChars)) {
-            assertEquals(1, CharacterUtils.getWidth(codePoint));
+        Locale defaultLocale = Locale.getDefault();
+        try {
+            Locale.setDefault(Locale.JAPANESE);
+            for(int codePoint : CodePointIterator.each(ambiguousChars)) {
+                assertEquals(2, CharacterUtils.getWidth(codePoint));
+            }
+            Locale.setDefault(Locale.ENGLISH);
+            for(int codePoint : CodePointIterator.each(ambiguousChars)) {
+                assertEquals(1, CharacterUtils.getWidth(codePoint));
+            }
+        } finally {
+            Locale.setDefault(defaultLocale);
         }
     }
 }
