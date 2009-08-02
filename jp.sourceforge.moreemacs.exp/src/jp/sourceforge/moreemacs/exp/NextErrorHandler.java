@@ -30,6 +30,9 @@ public class NextErrorHandler extends AbstractHandler {
         IWorkbenchPage page = site.getPage();
 
         MarkerSupportView problemView = (MarkerSupportView) page.findView("org.eclipse.ui.views.ProblemView");
+        if(problemView == null) {
+            return null;
+        }
         @SuppressWarnings("restriction")
         IMarker[] currentMarkers = problemView.getSelectedMarkers();
         IMarker startPoint = (currentMarkers.length != 0)?currentMarkers[currentMarkers.length-1]:null;
