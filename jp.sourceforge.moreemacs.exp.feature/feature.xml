@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="jp.sourceforge.moreemacs.exp.feature"
-      label="Feature"
+      label="More Emacs Experimental"
       version="1.0.0.qualifier"
       provider-name="quiver2k">
 
