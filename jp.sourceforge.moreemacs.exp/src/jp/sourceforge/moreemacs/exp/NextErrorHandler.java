@@ -38,7 +38,7 @@ public class NextErrorHandler extends AbstractHandler {
         
         @SuppressWarnings("restriction")
         IMarker[] allMarkers = problemView.getSelectedMarkers();
-        nextError(allMarkers, startPoint, page);
+        goNextError(allMarkers, startPoint, page);
 
         return null;
     }
@@ -57,7 +57,7 @@ public class NextErrorHandler extends AbstractHandler {
         }
     }
 
-    void nextError(IMarker[] allMarkers, IMarker startPoint, IWorkbenchPage page) throws ExecutionException {
+    void goNextError(IMarker[] allMarkers, IMarker startPoint, IWorkbenchPage page) throws ExecutionException {
         boolean found = false;
         List<IMarker> skipped = new ArrayList<IMarker>();
         for(IMarker marker: allMarkers) {
