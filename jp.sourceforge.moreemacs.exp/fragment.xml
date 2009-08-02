@@ -22,7 +22,7 @@
          point="org.eclipse.ui.bindings">
       <key
             commandId="jp.sourceforge.moreemacs.NextError"
-            contextId="org.eclipse.ui.textEditorScope"
+            contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
             sequence="M3+G M3+N">
       </key>
