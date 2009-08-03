@@ -74,6 +74,11 @@
       </command>
       <command
             categoryId="jp.sourceforge.moreemacs.category"
+            id="jp.sourceforge.moreemacs.NewLine"
+            name="newline">
+      </command>
+      <command
+            categoryId="jp.sourceforge.moreemacs.category"
             id="jp.sourceforge.moreemacs.UpcaseWord"
             name="upcase-word">
       </command>
@@ -175,6 +180,12 @@
          </class>
       </handler>
       <handler
+            commandId="jp.sourceforge.moreemacs.NewLine">
+         <class
+               class="jp.sourceforge.moreemacs.handlers.CommandHandler">
+         </class>
+      </handler>
+      <handler
             commandId="jp.sourceforge.moreemacs.UpcaseWord">
          <class
                class="jp.sourceforge.moreemacs.handlers.CommandHandler">
@@ -266,6 +277,13 @@
             sequence="M3+%">
       </key>
       <key
+            commandId="org.eclipse.ui.edit.text.goto.lineStart"
+            contextId="org.eclipse.ui.textEditorScope"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="M3+M">
+      </key>
+      <key
+            commandId="jp.sourceforge.moreemacs.NewLine"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
             sequence="M1+M">

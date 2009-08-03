@@ -31,67 +31,72 @@ The following list is key bindings of more emacs plugin.
 <table border="2">
 <caption>Key bindings of More Emacs</caption>
 <tr>
-<th>function</th>
+<th class="function">function</th>
 <th>binding</th>
 <th>description</th>
 </tr>
 <tr>
-<td>undo</td>
+<td class="function">undo</td>
 <td>C-/</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>delete previous</td>
+<td class="function">delete previous</td>
 <td>C-h</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>next editor</td>
+<td class="function">next editor</td>
 <td>C-x o, Shift-Tab</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>previous editor</td>
+<td class="function">previous editor</td>
 <td>C-Shift-Tab</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>file close</td>
+<td class="function">file close</td>
 <td>C-x 0</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>maximize part</td>
+<td class="function">maximize part</td>
 <td>C-x 1</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>new editor</td>
+<td class="function">new editor</td>
 <td>C-x 2</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>find replace</td>
+<td class="function">find replace</td>
 <td>M-Shift-5</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>return</td>
-<td>C-m<br/>C-j</td>
+<td class="function">newline-and-indent</td>
+<td>C-j</td>
 <td>rebind</td>
 </tr>
 <tr>
-<td>move-beginning-of-line</td>
+<td class="function">back-to-indentation</td>
+<td>M-m</td>
+<td>rebind</td>
+</tr>
+<tr>
+<td class="function">move-beginning-of-line</td>
 <td>C-a</td>
 <td>moves the cursor to 0th column, not to the first non-space char of the line.</td>
 </tr>
 <tr>
-<td>move-end-of-line</td>
+<td class="function">move-end-of-line</td>
 <td>C-e</td>
 <td></td>
 </tr>
 <tr>
-<td>forward-word</td>
+<td class="function">forward-word</td>
 <td>M-f</td>
 <td>moves the cursor to the end of word, not to the first char of the next word.
 Only Character.isLetterOrDigit() is used to word-break.
@@ -99,72 +104,77 @@ It is very simple but predictable.
 </td>
 </tr>
 <tr>
-<td>backward-word</td>
+<td class="function">backward-word</td>
 <td>M-b</td>
 <td></td>
 </tr>
 <tr>
-<td>kill-word</td>
+<td class="function">kill-word</td>
 <td>M-d</td>
 <td></td>
 </tr>
 <tr>
-<td>backward-kill-word</td>
+<td class="function">backward-kill-word</td>
 <td>M-BS</td>
 <td></td>
 </tr>
 <tr>
-<td>delete-horizontal-space</td>
+<td class="function">delete-horizontal-space</td>
 <td>M-\</td>
 <td></td>
 </tr>
 <tr>
-<td>kill-line</td>
+<td class="function">kill-line</td>
 <td>C-k</td>
 <td></td>
 </tr>
 <tr>
-<td>transpose-chars</td>
+<td class="function">transpose-chars</td>
 <td>C-t</td>
 <td></td>
 </tr>
 <tr>
-<td>transpose-words</td>
+<td class="function">transpose-words</td>
 <td>M-t</td>
 <td></td>
 </tr>
 <tr>
-<td>kill-rectangle</td>
+<td class="function">kill-rectangle</td>
 <td>C-x r k</td>
 <td>East Asian Width supported</td>
 </tr>
 <tr>
-<td>yank-rectangle</td>
+<td class="function">yank-rectangle</td>
 <td>C-x r y</td>
 <td>East Asian Width supported</td>
 </tr>
 <tr>
-<td>open-line</td>
+<td class="function">newline</td>
+<td>C-m</td>
+<td></td>
+</tr>
+<tr>
+<td class="function">open-line</td>
 <td>C-o</td>
 <td></td>
 </tr>
 <tr>
-<td>upcase-word</td>
+<td class="function">upcase-word</td>
 <td>M-u</td>
 <td></td>
 </tr>
 <tr>
-<td>downcase-word</td>
+<td class="function">downcase-word</td>
 <td>M-l</td>
 <td></td>
 </tr>
 <tr>
-<td>capitalize-word</td>
+<td class="function">capitalize-word</td>
 <td>M-c</td>
 <td></td>
 </tr>
 <tr>
-<td>comment-region</td>
+<td class="function">comment-region</td>
 <td>C-c C-c</td>
 <td>forward to toggle comment</td>
 </tr>
@@ -183,6 +193,11 @@ In the column calculation of rectangle operation, the width of ambiguous charact
 
 
 <h2>Change Log</h2>
+<h3>2009.8.4</h3>
+<ul>
+<li>Added newline, and assigned to C-m</li>
+<li>Added back-to-indentation</li>
+</ul>
 <h3>2009.8.1</h3>
 <ul>
 <li>Added comment-region</li>
