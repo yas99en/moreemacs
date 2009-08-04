@@ -6,9 +6,6 @@
    <feature url="features/jp.sourceforge.moreemacs.feature_1.2.0.qualifier.jar" id="jp.sourceforge.moreemacs.feature" version="1.2.0.qualifier">
       <category name="moreemacs"/>
    </feature>
-   <feature url="features/jp.sourceforge.moreemacs.exp.feature_1.0.0.qualifier.jar" id="jp.sourceforge.moreemacs.exp.feature" version="1.0.0.qualifier">
-      <category name="moreemacs"/>
-   </feature>
    <category-def name="moreemacs" label="More Emacs">
       <description>
          provides more emacs like key bindings.
