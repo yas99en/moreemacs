@@ -284,7 +284,7 @@
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.NewLine"
-            contextId="org.eclipse.ui.contexts.window"
+            contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
             sequence="M1+M">
       </key>
@@ -394,6 +394,12 @@
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
             sequence="M1+C M1+C">
+      </key>
+      <key
+            commandId="jp.sourceforge.moreemacs.CommentRegion"
+            contextId="org.eclipse.ui.textEditorScope"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="M1+U M1+C M1+C">
       </key>
    </extension>
 
