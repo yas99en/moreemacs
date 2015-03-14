@@ -217,8 +217,8 @@
       <scheme
             description="provides more emacs like key binding."
             id="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            name="More Emacs"
-            parentId="org.eclipse.ui.emacsAcceleratorConfiguration">
+            parentId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            name="More Emacs">
       </scheme>
       <!-- M1=CTRL, M2=SHIFT, M3=ALT for windows platform -->
 
@@ -401,6 +401,347 @@
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
             sequence="M1+U M1+C M1+C">
       </key>
+
+
+      <!-- emacs key bindings org.eclipse.ui.workbench.texteditor_3.8.100.v20120619-083720/plugin.xml -->
+      <key
+            commandId="org.eclipse.ui.edit.text.cut.line.to.beginning"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ALT+0 CTRL+K"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.cut.line.to.beginning"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC 0 CTRL+K"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.cut.line.to.end" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="CTRL+K" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <key
+            commandId="org.eclipse.ui.edit.text.set.mark"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+SPACE"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.set.mark"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+2"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.clear.mark"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+G"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.swap.mark"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+X CTRL+X"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.findIncremental"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+S"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.findIncrementalReverse"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+R"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.lineUp"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+P"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.lineDown"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+N"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.goto.lineStart" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="CTRL+A" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.goto.lineEnd" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="CTRL+E" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.line"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+X G"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.columnPrevious"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+B"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.columnNext"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+F"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.pageUp"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ALT+V"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.pageUp"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC V"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.pageDown"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+V"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.goto.wordPrevious" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="ALT+B" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.wordPrevious"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC B"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.goto.wordNext" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="ALT+F" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.goto.wordNext" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="ESC F" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textStart"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ALT+&lt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textStart"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ALT+SHIFT+&lt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textStart"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC &lt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textStart"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC SHIFT+&lt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textStart"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+X ["
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textEnd"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ALT+&gt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textEnd"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ALT+SHIFT+&gt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textEnd"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC &gt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textEnd"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC SHIFT+&gt;"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.goto.textEnd"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+X ]"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.scroll.lineUp"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ALT+Z"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.scroll.lineUp"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="ESC Z"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.scroll.lineDown"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+Z"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.deleteNext"
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="CTRL+D"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.deletePreviousWord" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="M3+BS" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <key
+	        platform="carbon"
+            commandId=""
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="M3+BS"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+	  <!-- <key -->
+	  <!--       commandId="org.eclipse.ui.edit.text.deleteNextWord" -->
+	  <!--       contextId="org.eclipse.ui.textEditorScope" -->
+	  <!--       sequence="M3+DEL" -->
+	  <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+	  <key
+	        platform="carbon"
+	        commandId=""
+	        contextId="org.eclipse.ui.textEditorScope"
+	        sequence="M3+DEL"
+	        schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.deletePreviousWord" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="ESC BS" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.deleteNextWord" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="M3+D" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.deleteNextWord" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="ESC D" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+	  <key
+	        commandId="org.eclipse.ui.edit.text.recenter"
+	        contextId="org.eclipse.ui.textEditorScope"
+			schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+	        sequence="CTRL+L"/>
+
+          <!-- org.eclipse.ui_3.103.0.v20120521-2329/plugin.xml -->
+      <key
+            commandId="org.eclipse.ui.file.close"
+            sequence="CTRL+X K"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.closeAll"
+            sequence="CTRL+X CTRL+C"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.save"
+            sequence="CTRL+X CTRL+S"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.saveAll"
+            sequence="CTRL+X S"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.print"
+            sequence="M3+F9"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.file.print"
+            sequence="ESC F9"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.undo"
+            sequence="F9"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.undo"
+            sequence="CTRL+X U"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.undo"
+            sequence="CTRL+M2+-"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.redo"
+            sequence="F10"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.redo"
+            sequence="CTRL+X R"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.redo"
+            sequence="CTRL+M2++"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.cut"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="CTRL+W"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.copy"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="M3+W"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.copy"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="ESC W"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.paste"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="CTRL+Y"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.paste"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="CTRL+Y"
+            platform="gtk"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.selectAll"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="CTRL+X H"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.findReplace"
+            sequence="M3+R"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.findReplace"
+            sequence="ESC R"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
+	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            sequence="ALT+/"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            sequence="ALT+?"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.contentAssist.contextInformation"
+            sequence="ALT+SHIFT+?"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <key
+            commandId="org.eclipse.ui.window.openEditorDropDown"
+            sequence="CTRL+X B"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+      <key
+            commandId="org.eclipse.ui.window.switchToEditor"
+            sequence="CTRL+X CTRL+B"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
+
    </extension>
 
 </plugin>
