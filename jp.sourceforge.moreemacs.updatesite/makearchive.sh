@@ -14,9 +14,18 @@ for file in $files; do
     fi
 done
 
+fail() {
+    echo "$1"
+    exit 1
+}
+
 version=$1
 name=moreemacs_$version
 mkdir $name
-cp -r $files $name
-zip -r $name.zip $name
+if ! cp -r $files $name; then
+   fail "copy files"
+fi
+if ! zip -qr $name.zip $name; then
+   fail "can't make an archive"
+fi
 rm -rf $name
