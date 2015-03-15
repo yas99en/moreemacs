@@ -1,33 +1,33 @@
 @CHARSET "UTF-8";
 
 body {
-	background: #EEFFEE;
-	margin: 30px;
+    background: #EEFFEE;
+    margin: 30px;
 }
 
 h1 {
-	background: #8888FF;
+    background: #8888FF;
 }
 
 h2 {
-	background: #AAAAFF;
+    background: #AAAAFF;
 }
 
 table {
-	margin-left: auto;
-	margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th {
-	background: #AABBBB;
+    background: #AABBBB;
 }
 
 .chart {
-	text-align: center;
+    text-align: center;
 }
 
 .function {
-	white-space: nowrap
+    white-space: nowrap
 }
 
 .flatTable {

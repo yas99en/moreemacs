@@ -595,22 +595,22 @@
       <!--       sequence="M3+BS" -->
       <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
       <key
-	        platform="carbon"
+            platform="carbon"
             commandId=""
             contextId="org.eclipse.ui.textEditorScope"
             sequence="M3+BS"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
-	  <!-- <key -->
-	  <!--       commandId="org.eclipse.ui.edit.text.deleteNextWord" -->
-	  <!--       contextId="org.eclipse.ui.textEditorScope" -->
-	  <!--       sequence="M3+DEL" -->
-	  <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
-	  <key
-	        platform="carbon"
-	        commandId=""
-	        contextId="org.eclipse.ui.textEditorScope"
-	        sequence="M3+DEL"
-	        schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
+      <!-- <key -->
+      <!--       commandId="org.eclipse.ui.edit.text.deleteNextWord" -->
+      <!--       contextId="org.eclipse.ui.textEditorScope" -->
+      <!--       sequence="M3+DEL" -->
+      <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
+      <key
+            platform="carbon"
+            commandId=""
+            contextId="org.eclipse.ui.textEditorScope"
+            sequence="M3+DEL"
+            schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
       <!-- <key -->
       <!--       commandId="org.eclipse.ui.edit.text.deletePreviousWord" -->
       <!--       contextId="org.eclipse.ui.textEditorScope" -->
@@ -626,11 +626,11 @@
       <!--       contextId="org.eclipse.ui.textEditorScope" -->
       <!--       sequence="ESC D" -->
       <!--       schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/> -->
-	  <key
-	        commandId="org.eclipse.ui.edit.text.recenter"
-	        contextId="org.eclipse.ui.textEditorScope"
-			schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-	        sequence="CTRL+L"/>
+      <key
+            commandId="org.eclipse.ui.edit.text.recenter"
+            contextId="org.eclipse.ui.textEditorScope"
+    		schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
+            sequence="CTRL+L"/>
 
           <!-- org.eclipse.ui_3.103.0.v20120521-2329/plugin.xml -->
       <key
@@ -722,7 +722,7 @@
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration" />
       <key
             commandId="org.eclipse.ui.edit.text.contentAssist.proposals"
-	        contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
             sequence="ALT+/"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"/>
       <key
