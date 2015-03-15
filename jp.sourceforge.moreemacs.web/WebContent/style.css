@@ -29,3 +29,17 @@ th {
 .function {
 	white-space: nowrap
 }
+
+.flatTable {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.flatTable td, .flatTable th {
+  border: 1px solid black;
+  padding: 5px;
+}
+#functions td:first-child,
+#functions td:nth-child(2)
+{
+  white-space: nowrap;
+}
