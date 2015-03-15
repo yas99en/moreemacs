@@ -12,6 +12,11 @@ border-collapse: collapse;
 border: 1px solid black;
 padding: 5px;
 }
+#functions td:first-child,
+#functions td:nth-child(2)
+ {
+white-space: nowrap;
+}
 </style>
 <title>More Emacs Plugin</title>
 </head>
@@ -42,7 +47,7 @@ Drag 'Install' button to your eclipse workspace.
 The following list is key bindings of more emacs plugin.
 </p>
 
-<table class="flatTable">
+<table id="functions" class="flatTable">
 <caption>Key bindings of More Emacs</caption>
 <tr>
 <th class="function">function</th>
