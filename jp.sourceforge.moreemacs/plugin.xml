@@ -226,49 +226,49 @@
             commandId="org.eclipse.ui.edit.undo"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+/">
+            sequence="CTRL+/">
       </key>
       <key
             commandId="org.eclipse.ui.edit.text.deletePrevious"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+H">
+            sequence="CTRL+H">
       </key>
       <key
             commandId="org.eclipse.ui.window.nextEditor"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+TAB">
+            sequence="CTRL+TAB">
       </key>
       <key
             commandId="org.eclipse.ui.window.nextEditor"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+X O">
+            sequence="CTRL+X O">
       </key>
       <key
             commandId="org.eclipse.ui.window.previousEditor"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+M2+TAB">
+            sequence="CTRL+M2+TAB">
       </key>
       <key
             commandId="org.eclipse.ui.file.close"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+X 0">
+            sequence="CTRL+X 0">
       </key>
       <key
             commandId="org.eclipse.ui.window.maximizePart"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+X 1">
+            sequence="CTRL+X 1">
       </key>
       <key
             commandId="org.eclipse.ui.window.newEditor"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+X 2">
+            sequence="CTRL+X 2">
       </key>
       <key
             commandId="org.eclipse.ui.edit.findReplace"
@@ -286,24 +286,24 @@
             commandId="jp.sourceforge.moreemacs.NewLine"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+M">
+            sequence="CTRL+M">
       </key>
       <key
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+J">
+            sequence="CTRL+J">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.MoveBeginningOfLine"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+A">
+            sequence="CTRL+A">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.MoveEndOfLine"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+E">
+            sequence="CTRL+E">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.ForwardWord"
@@ -339,19 +339,19 @@
             commandId="jp.sourceforge.moreemacs.KillLine"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+K">
+            sequence="CTRL+K">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.OpenLine"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+O">
+            sequence="CTRL+O">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.TransposeChars"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+T">
+            sequence="CTRL+T">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.TransposeWords"
@@ -363,13 +363,13 @@
             commandId="jp.sourceforge.moreemacs.KillRectangle"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+X R K">
+            sequence="CTRL+X R K">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.YankRectangle"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+X R Y">
+            sequence="CTRL+X R Y">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.UpcaseWord"
@@ -393,13 +393,13 @@
             commandId="jp.sourceforge.moreemacs.CommentRegion"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+C M1+C">
+            sequence="CTRL+C CTRL+C">
       </key>
       <key
             commandId="jp.sourceforge.moreemacs.CommentRegion"
             contextId="org.eclipse.ui.textEditorScope"
             schemeId="jp.sourceforge.moreemacs.moreEmacsAcceleratorConfiguration"
-            sequence="M1+U M1+C M1+C">
+            sequence="CTRL+U CTRL+C CTRL+C">
       </key>
 
 
