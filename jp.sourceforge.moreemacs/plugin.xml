@@ -220,7 +220,8 @@
             parentId="org.eclipse.ui.defaultAcceleratorConfiguration"
             name="More Emacs">
       </scheme>
-      <!-- M1=CTRL, M2=SHIFT, M3=ALT for windows platform -->
+      <!-- M1=CTRL,    M2=SHIFT, M3=ALT    for windows platform -->
+      <!-- M1=COMMAND, M2=SHIFT, M3=OPTION for mac platform -->
 
       <key
             commandId="org.eclipse.ui.edit.undo"
